@@ -1,0 +1,34 @@
+title: "Miki’s Digital Garden"
+description: "A quiet place to grow ideas."
+url: ""         # e.g., https://yourname.github.io
+baseurl: ""     # e.g., /digital-garden if using a project page
+
+# Collections
+collections:
+  notes:
+    output: true
+    permalink: /notes/:slug/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "notes"
+    values:
+      layout: "note"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Plugins (compatible with GitHub Pages)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Markdown & Permalinks
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
